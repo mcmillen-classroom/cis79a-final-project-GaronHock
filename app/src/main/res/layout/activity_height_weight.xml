@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:fontFamily = "cursive"
+
+    android:id="@+id/BMI_Layout"
+    tools:context=".HeightWeightActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Select your gender"
+        android:fontFamily ="sans-serif-condensed-light"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MFRadioButtons"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Male"
+            android:textColor="@color/white"
+            android:fontFamily ="sans-serif-condensed-light"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:id="@+id/MaleRadioButton"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Female"
+            android:fontFamily ="sans-serif-condensed-light"
+
+           />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FemaleRadioButton"/>
+    </RadioGroup>
+
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text = "Enter weight"
+          android:fontFamily ="sans-serif-condensed-light"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:layout_marginBottom="20dp"
+          />
+      <EditText
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:id ="@+id/WeightEditText"
+          android:layout_marginBottom="20dp"
+          android:hint="Enter in lbs"
+          android:textAlignment="center"
+          android:inputType="numberDecimal"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Enter amount of drinks"
+            android:fontFamily ="sans-serif-condensed-light"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id ="@+id/DrinkEditText"
+            android:layout_marginBottom="20dp"
+            android:hint="# of beers, shots, or glasses of wine"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "How many hours has it been since you started drinking?"
+        android:fontFamily ="sans-serif-condensed-light"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id ="@+id/HoursEditText"
+        android:hint="# of hours"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/BACButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate your BAC"/>
+</LinearLayout>

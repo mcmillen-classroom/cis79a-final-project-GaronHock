@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DontDrinkAndDriveSilly</string>
+    <string name="BAC_double">%.1f</string>
+</resources>

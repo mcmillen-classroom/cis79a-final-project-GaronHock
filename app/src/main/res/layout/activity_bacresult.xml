@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:uber="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BACResultActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/BACResult_Layout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="HANDCUFFS AREN'T SEXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily ="@font/butchermanregular"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:id = "@+id/KEYS"
+            android:gravity="top|center"/>
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily ="sans-serif-condensed-light"
+            android:textStyle="bold"
+            android:text="Your Blood Alcohol Content is approximately: "
+            android:textSize="25dp"
+            android:id = "@+id/Explanation"
+            android:gravity="top|center"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily ="sans-serif-condensed-light"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="@string/BAC_double"
+            android:layout_marginLeft="25dp"
+            android:textSize="50dp"
+            android:padding="10dp"
+            android:id = "@+id/BAC_TEXT_VIEW"
+            android:gravity="top|center"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/cop" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="WE RECOMMEND YOU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily ="sans-serif-condensed-light"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:id = "@+id/recommend"
+            android:gravity="top|center"/>
+        />
+
+
+        <com.uber.sdk.android.rides.RideRequestButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            uber:ub__style="black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <Button
+            android:id="@+id/btnload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="View contacts"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:onClick="callContacts"/>
+    </LinearLayout>
+</LinearLayout>

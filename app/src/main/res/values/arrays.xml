@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="CongratsText">
+        <item>You\'re</item>
+        <item>Not</item>
+        <item>That</item>
+        <item>Drunk!</item>
+    </string-array>
+
+</resources>
